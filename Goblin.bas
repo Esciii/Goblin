@@ -42,12 +42,13 @@ end
  goto 0draw
 
 0flip
+ ram0 = 0
  if ram1 = 0 then 0flip1
  if ram1 = 1 then 0flip2
 0flip1
- ram1 = 1 : ram0 = 0 : goto 0draw
+ ram1 = 1 : goto 0draw
 0flip2
- ram1 = 0 : ram0 = 0 : goto 0draw
+ ram1 = 0
 
 0draw
  drawscreen
@@ -58,8 +59,8 @@ end
 0init
  gosub __ballrand
 
- player0x = $61 : player0y = $2D : player1x = $61 : player1y = $2D : ballheight = 2 : missile1y = $F0
- ram5 = 0
+ player0x = $5E : player0y = $2D : player1x = $5E : player1y = $2D : ballheight = 2
+ ram5 = 0 : ram18 = 50
  pfscore2 = $FF : score = 0
  ram10 = %01111111 : ram11 = $FF : ram12 = %00011111 : ram13 = %00001111 : ram14 = %00111111 : ram15 = %11111111
 
@@ -453,7 +454,7 @@ end
 
 1draw
  drawscreen
- if joy0up then player0y = player0y - 1 : if player0y < 1 then ram6 = 1
+ if joy0up then player0y = player0y - 1 : if player0y < 3 then ram6 = 1
  if joy0down then player0y = player0y + 1 : if player0y > 89 then ram6 = 2
  if joy0left then player0x = player0x - 1 : if player0x < 13 then ram6 = 3
  if joy0right then player0x = player0x + 1 : if player0x > 142 then ram6 = 4
