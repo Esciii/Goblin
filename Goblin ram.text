@@ -31,3 +31,4 @@ F2 - sram3  - slimes left in current area
 F3 - sram4  - player health
 F4 - ram28  - score colour
 F5 - ram29  - graphics redef during collision
+FA - ram32  - graphics, idr
