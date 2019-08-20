@@ -457,7 +457,7 @@ end
  if joy0up then player0y = player0y - 1 : if player0y < 3 then ram6 = 1
  if joy0down then player0y = player0y + 1 : if player0y > 89 then ram6 = 2
  if joy0left then player0x = player0x - 1 : if player0x < 13 then ram6 = 3
- if joy0right then player0x = player0x + 1 : if player0x > 142 then ram6 = 4
+ if joy0right then player0x = player0x + 1 : if player0x > 138 then ram6 = 4
  if joy0fire then ram0 = 6
  if switchreset then reboot
  player1y = player0y : player1x = player0x
