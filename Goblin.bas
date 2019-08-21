@@ -1,4 +1,3 @@
- set optimization size
  set tv pal
  set smartbranching on
  set kernel_options pfcolors no_blank_lines
@@ -153,7 +152,7 @@ coll5
  if collision(player0,playfield) then 1p14
  goto 1p10
 1p14
- player0x = $61 : player0y = $2D : score = score + 1000 : goto 1p10
+ player0x = $61 : player0y = $2D
 
 1p12
  if ram5 = 0 then goto area0
