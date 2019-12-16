@@ -1,34 +1,41 @@
-83 - ram37  - missile1y
-88 - ram36  - mixxile1x
+title screen
+D6 - ram0   - flip timer
+D7 - ram1   - flip status
+
+main game
 91 - ram35  - has scored
-93 - sram0  - score
-94 - sram1  - score
-95 - sram2  - score
 9C - vram1  - current player center x
 9D - vram2  - current player center y
 D5 - vram7  - move screen up/down
-D6 - ram0   - attack animation and sound timer / title screen timer
-D7 - ram1   - slime damage timer / title screen score
-D8 - ram2   - record player position every 3 frames
-D9 - ram3   - player x
-DA - ram4   - player y
+D6 - ram0   - attack animation and sound timer
+D7 - ram1   - slime damage timer
+D8 - ram2   - collsion
+D9 - ram3   - boss x
+DA - ram4   - boss y
 DB - ram5   - current area
 DC - ram6   - screen transition direction
 DD - ram7   - slime movement delay
 DE - ram8   - slime total display
 DF - ram9   - slime total change
-E0 - ram10  - slimes in area0
-E1 - ram11  - slimes in area1
-E2 - ram12  - slimes in area2
-E3 - ram13  - slimes in area3
-E4 - ram14  - slimes in area4
-E5 - ram15  - slimes in area5
+E0 - ram10  - slimes in area 0
+E1 - ram11  - slimes in area 1
+E2 - ram12  - slimes in area 2
+E3 - ram13  - slimes in area 3
+E4 - ram14  - slimes in area 4
+E5 - ram15  - slimes in area 5
 E6 - ram16  - slime attack sound
 E7 - ram17  - slime attack buffer
 E8 - ram18  - slime attack timer
 E9 - ram19  - rand fix
+EA - ram20  - player damage timer
+EB - ram21  - slimes in area 15 and 16
+EC - ram22  - slimes in area 14
+ED - ram23  - slimes in area 12 13 and 18
+EF - ram25  - boss counter
+F0 - ram26  - 
 F2 - sram3  - slimes left in current area
 F3 - sram4  - player health
-F4 - ram28  - score colour
-F5 - ram29  - graphics redef during collision
-FA - ram32  - graphics, idr
+
+easter egg
+D6 - ram0   - attack sound timer
+D9 - ram3   - slime movement delay
